@@ -1,4 +1,6 @@
+//
 package Seminar5Java;
+import javax.naming.Name;
 import java.util.*;
 public class Phonebook2 {
     public static void main(String[] args) {
@@ -9,8 +11,9 @@ public class Phonebook2 {
         int n = scanner.nextInt();
 
         for (int i = 0; i < n; i++) {
-            System.out.println("Введите имя и номер телефона через пробел:");
+            System.out.println("Введите имя ");
             String name = scanner.next();
+            System.out.println("Введите номер телефона:");
             String phone = scanner.next();
             List<String> phones = phoneBook.get(name);
             if (phones == null) {
@@ -37,5 +40,4 @@ public class Phonebook2 {
             System.out.println(name + ": " + phones);
         }
     }
-
 }
